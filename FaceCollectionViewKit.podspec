@@ -10,5 +10,6 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "12.0"
   spec.source       = { :git => "https://github.com/serhatakalin/FaceCollectionViewKit.git", :tag => "1.0.0" }
   spec.source_files  = "FaceCollectionViewKit/**/*"
+  spec.resources = "FaceCollectionViewKit/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
   spec.swift_version = '5.0'
 end

@@ -18,7 +18,7 @@ class FaceAlbumView: UIView, UICollectionViewDelegate, UICollectionViewDataSourc
     private let nibName: String = "FaceAlbumCell"
     private let reuseIdentifier: String = "FaceAlbumCell"
     public var numberPhotoPerRow: CGFloat = 2
-    
+
     override func awakeAfter(using aDecoder: NSCoder) -> Any? {
         return loadFromNibIfEmbeddedInDifferentNib()
     }
