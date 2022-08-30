@@ -2,11 +2,11 @@
 A framework that lists all images in the album that contain faces.
 
 ## Features
-- It uses the detection features of CIDetectorTypeFace.
-- Scans all albums, presents you photos with face detected.
-- The quality of the photos does not deteriorate.
-- Detection settings can be changed.
-- Simple and fast.
+- [x] It uses the detection features of CIDetectorTypeFace.
+- [x] Scans all albums, presents you photos with face detected.
+- [x] The quality of the photos does not deteriorate.
+- [x] Detection settings can be changed.
+- [x] Simple and fast.
 
 ## Usage
 
