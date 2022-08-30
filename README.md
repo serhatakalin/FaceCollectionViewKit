@@ -12,10 +12,12 @@ A framework that lists all images in the album that contain faces.
 ## Usage
 
 ### Initialize
+Firstly, use this wherever you want to show the album.
 ```ruby
 FaceCollectionViewKit.shared.initialize(for: YOUR_CUSTOM_VIEW)
 ```
 ### Select Photo
+This is triggered when you select a photo from the album and just call it once in viewDidLoad().
 ```ruby
 FaceCollectionViewKit.shared.imageSelected = { [weak self] image in
             //whatever you would like to do.
