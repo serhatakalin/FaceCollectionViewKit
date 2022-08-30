@@ -17,18 +17,19 @@ FaceCollectionViewKit.shared.initialize(for: YOUR_CUSTOM_VIEW)
 ```ruby
 FaceCollectionViewKit.shared.imageSelected = { [weak self] image in
             //whatever you would like to do.
-}```
+}
+```
 
 ## Installation
 ### CocoaPods
-To integrate **FaceCollectionViewKit** into your Xcode project using  [CocoaPods](https://cocoapods.org/), specify it in your Podfile:
+To integrate FaceCollectionViewKit into your Xcode project using  [CocoaPods](https://cocoapods.org/), specify it in your Podfile:
 
 ```ruby
 pod 'FaceCollectionViewKit', :git => 'https://github.com/serhatakalin/FaceCollectionViewKit.git'
 ```
 
 ### Carthage
-To integrate **FaceCollectionViewKit** into your Xcode project using [Carthage](https://github.com/Carthage/Carthage), specify it in your Cartfile:
+To integrate FaceCollectionViewKit into your Xcode project using [Carthage](https://github.com/Carthage/Carthage), specify it in your Cartfile:
 
 ```ruby
 pod 'serhatakalin/FaceCollectionViewKit'
