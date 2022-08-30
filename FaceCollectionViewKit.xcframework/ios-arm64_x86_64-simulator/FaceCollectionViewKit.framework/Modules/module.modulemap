@@ -1,0 +1,11 @@
+framework module FaceCollectionViewKit {
+  umbrella header "FaceCollectionViewKit.h"
+
+  export *
+  module * { export * }
+}
+
+module FaceCollectionViewKit.Swift {
+    header "FaceCollectionViewKit-Swift.h"
+    requires objc
+}

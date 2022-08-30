@@ -1,0 +1,44 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name FaceCollectionViewKit
+@_exported import FaceCollectionViewKit
+import Foundation
+import Photos
+import Swift
+import UIKit
+import _Concurrency
+extension Photos.PHAsset {
+  public func image(isLimited: Swift.Bool = false, maxSize: CoreGraphics.CGSize, isSyncron: Swift.Bool = false, resizeMode: Photos.PHImageRequestOptionsResizeMode = .fast, deliveryMode: Photos.PHImageRequestOptionsDeliveryMode = .fastFormat, contentMode: Photos.PHImageContentMode = .default, retry: Swift.Bool = false, networkAccess: Swift.Bool = false, completionHandler: @escaping (UIKit.UIImage?) -> ()) -> Photos.PHImageRequestID
+}
+@_hasMissingDesignatedInitializers public class FaceCollectionViewKit {
+  public static let shared: FaceCollectionViewKit.FaceCollectionViewKit
+  public var imageSelected: ((UIKit.UIImage) -> Swift.Void)?
+  public var scrollDirection: UIKit.UICollectionView.ScrollDirection
+  public var numberPhotoPerRow: CoreGraphics.CGFloat
+  public var detectMinSize: Swift.Int
+  public var detectMaxSize: Swift.Int
+  public var numberOfDetection: Swift.Int
+  public var settingsStatus: Swift.Bool
+  public var limitedStatus: Swift.Bool
+  public func setup(for superview: UIKit.UIView)
+  public func sync()
+  @objc deinit
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public class func loadFromNib(withOwner owner: Any? = nil) -> Self?
+  @_Concurrency.MainActor(unsafe) public func loadFromNibIfEmbeddedInDifferentNib() -> Self?
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public var isSmall: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var isBeforeIphoneX: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var modelName: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class DetectionManager {
+  @objc deinit
+}
