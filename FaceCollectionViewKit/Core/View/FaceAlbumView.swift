@@ -37,8 +37,7 @@ class FaceAlbumView: UIView, UICollectionViewDelegate, UICollectionViewDataSourc
     }
 
     private func didLoad() {
-        let frameworkBundle = Bundle(identifier: FaceCollectionViewKit.Constant.frameworkBundle)
-        faceCollectionView.register(UINib(nibName: nibName, bundle: frameworkBundle), forCellWithReuseIdentifier: reuseIdentifier)
+        faceCollectionView.register(UINib(nibName: nibName, bundle: Bundle.main), forCellWithReuseIdentifier: reuseIdentifier)
         faceCollectionView.decelerationRate = .fast
         if let flowLayout = faceCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.scrollDirection = FaceCollectionViewKit.shared.scrollDirection

@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIView {
    class func loadFromNib(withOwner owner: Any? = nil) -> Self? {
-        let frameworkBundle = Bundle(identifier: FaceCollectionViewKit.Constant.frameworkBundle)
+       let frameworkBundle = Bundle.main
         let names = String(describing: type(of: self)).components(separatedBy: ".")
         if names.indices.contains(0) {
             let name = names[0]

@@ -10,14 +10,9 @@ import Photos
 import UIKit
 
 public class FaceCollectionViewKit {
-    struct Constant {
-        static let frameworkBundle = "com.lyrebirdstudio.faceCollectionViewKit"
-        static let queLabel = "FaceCollectionViewKit.asset.identifier"
-        static let assetKey = "facesAssetKey"
-    }
-
     public static let shared = FaceCollectionViewKit()
     private var viewPresent: FaceAlbumView?
+    private let assetsCacheKey = "assetsCacheKey"
     public var imageSelected: ((UIImage) -> Void)? = nil
     public var scrollDirection: UICollectionView.ScrollDirection = .vertical
     public var numberPhotoPerRow: CGFloat = 2
@@ -28,12 +23,12 @@ public class FaceCollectionViewKit {
     public var limitedStatus: Bool = false
     var faceAlbumAssets: [String: Bool]? {
         didSet {
-            self.setObject(faceAlbumAssets, forKey: Constant.assetKey)
+            self.setObject(faceAlbumAssets, forKey: assetsCacheKey)
         }
     }
 
     private init() {
-        faceAlbumAssets = self.getObject([String: Bool].self, forKey: Constant.assetKey)
+        faceAlbumAssets = self.getObject([String: Bool].self, forKey: assetsCacheKey)
     }
 
     public func setup(for superview: UIView) {

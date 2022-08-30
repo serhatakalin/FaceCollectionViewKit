@@ -15,7 +15,7 @@ public class DetectionManager {
         case faceDetectionCompleted(Int, Int)
         case faceDetectionFinished
     }
-    lazy var queue = DispatchQueue(label: FaceCollectionViewKit.Constant.queLabel)
+    lazy var queue = DispatchQueue(label: "FaceCollectionViewKit.asset.identifier")
     private var isWaitingForAssets = false
     private var detectingFetchIndex = 0
     private var drawnFetchIndex = 0
