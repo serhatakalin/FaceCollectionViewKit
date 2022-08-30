@@ -20,10 +20,7 @@ class MainVC: UIViewController {
     }
     
     private func initializeCollectionView() {
-        FaceCollectionViewKit.shared.setup(for: self.view) { [weak self] collectionView in
-            self?.view.addSubview(collectionView)
-        }
-        
+        FaceCollectionViewKit.shared.initialize(for: self.view)
         FaceCollectionViewKit.shared.imageSelected = { [weak self] image in
             self?.openShowVC(image: image)
         }

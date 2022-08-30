@@ -31,13 +31,13 @@ public class FaceCollectionViewKit {
         faceAlbumAssets = self.getObject([String: Bool].self, forKey: assetsCacheKey)
     }
 
-    public func setup(for superview: UIView, completion: @escaping ((UIView) -> Void)) {
+    public func initialize(for superview: UIView) {
         if viewPresent == nil {
             viewPresent = FaceAlbumView.loadFromNib()
         }
         viewPresent?.frame = superview.bounds
         if let view = self.viewPresent {
-            completion(view)
+            superview.addSubview(view)
         }
     }
 

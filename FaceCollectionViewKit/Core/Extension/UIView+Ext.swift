@@ -10,11 +10,10 @@ import UIKit
 
 public extension UIView {
    class func loadFromNib(withOwner owner: Any? = nil) -> Self? {
-       let frameworkBundle = Bundle.main
         let names = String(describing: type(of: self)).components(separatedBy: ".")
         if names.indices.contains(0) {
             let name = names[0]
-            let views =  UINib(nibName: name, bundle: frameworkBundle).instantiate(withOwner: owner, options: nil)
+            let views =  UINib(nibName: name, bundle: Bundle(for: FaceAlbumView.self)).instantiate(withOwner: owner, options: nil)
             if views.indices.contains(0) {
                 let view = views[0]
                 return cast(view)
