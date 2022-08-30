@@ -161,20 +161,10 @@
 			children = (
 				E44E770228BD9040004796BA /* FaceCollectionViewKit.swift */,
 				E44E76F228BD8F38004796BA /* DetectionManager.swift */,
-				E44E772128BD97A1004796BA /* View */,
-				E44E771F28BD9776004796BA /* Cell */,
+				E44E772128BD97A1004796BA /* Resource */,
 				E44E772028BD977E004796BA /* Extension */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		E44E771F28BD9776004796BA /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				E44E76FE28BD8FC3004796BA /* FaceAlbumCell.xib */,
-				E44E76FC28BD8FAE004796BA /* FaceAlbumCell.swift */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		E44E772028BD977E004796BA /* Extension */ = {
@@ -187,13 +177,15 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		E44E772128BD97A1004796BA /* View */ = {
+		E44E772128BD97A1004796BA /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 				E44E76EC28BD8ED8004796BA /* FaceAlbumView.swift */,
 				E44E76F028BD8F16004796BA /* FaceAlbumView.xib */,
+				E44E76FE28BD8FC3004796BA /* FaceAlbumCell.xib */,
+				E44E76FC28BD8FAE004796BA /* FaceAlbumCell.swift */,
 			);
-			path = View;
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
