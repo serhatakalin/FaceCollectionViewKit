@@ -20,7 +20,7 @@ extension Photos.PHAsset {
   public var numberOfDetection: Swift.Int
   public var settingsStatus: Swift.Bool
   public var limitedStatus: Swift.Bool
-  public func setup(for superview: UIKit.UIView)
+  public func setup(for superview: UIKit.UIView, completion: @escaping ((UIKit.UIView) -> Swift.Void))
   public func sync()
   @objc deinit
 }

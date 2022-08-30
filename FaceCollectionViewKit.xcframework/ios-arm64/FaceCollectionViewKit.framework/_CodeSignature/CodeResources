@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/FaceCollectionViewKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		BYhsNs9vTwhM1I8urZZ0t5n3JS8=
+		HhhIW8tQelZ8mAnuYhh5KeK6KaI=
 		</data>
 		<key>Modules/FaceCollectionViewKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		gAway0OyH9rnGnxUwIrRSV6eXO8=
+		yaGpFVfxSmxz8DT1ozYhX9vctSs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			acnnRH5nJ/HWFmi37YjxkJxo1eTAlVF1/UBnoxlTfhs=
+			hzuE2mZV8TDLK4cvhW+EFIL9FAKmHLKpv8kNq7iHOzE=
 			</data>
 		</dict>
 		<key>Modules/FaceCollectionViewKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UeTFsAGeNQsKhakP3VvunU4hWtiIWK9BrSUX3FG0Xvc=
+			6qGFhXkIZ3qEhFdHVaL7W+3v4cT9uyfxo71yNsuMvag=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

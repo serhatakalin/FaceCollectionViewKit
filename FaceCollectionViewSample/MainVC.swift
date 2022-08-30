@@ -11,7 +11,7 @@ class MainVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setup()
+        initializeCollectionView()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -19,8 +19,11 @@ class MainVC: UIViewController {
         FaceCollectionViewKit.shared.sync()
     }
     
-    private func setup() {
-        FaceCollectionViewKit.shared.setup(for: self.view)
+    private func initializeCollectionView() {
+        FaceCollectionViewKit.shared.setup(for: self.view) { [weak self] collectionView in
+            self?.view.addSubview(collectionView)
+        }
+        
         FaceCollectionViewKit.shared.imageSelected = { [weak self] image in
             self?.openShowVC(image: image)
         }
