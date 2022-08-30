@@ -1,5 +1,5 @@
 # FaceCollectionViewKit
-A framework that lists all images in the album that contain faces.
+A framework that lists all photos in the album that contain faces.
 
 ## Features
 - [x] It uses the detection features of CIDetectorTypeFace.
