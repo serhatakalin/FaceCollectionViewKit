@@ -6,6 +6,7 @@ A framework that lists all images in the album that contain faces.
 - Scans all albums, presents you photos with face detected.
 - The quality of the photos does not deteriorate.
 - Detection settings can be changed.
+- Simple and fast.
 
 ## Usage
 
