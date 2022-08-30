@@ -28,7 +28,6 @@ xcuserdata/
 *.moved-aside
 *.xcuserstate
 *.sh
-*.gitignore
 
 ## Obj-C/Swift specific
 *.hmap
