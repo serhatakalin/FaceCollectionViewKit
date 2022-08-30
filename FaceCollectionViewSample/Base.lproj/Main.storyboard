@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainVC" id="BYZ-38-t0r" customClass="MainVC" customModule="FaceCollectionView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+        <!--ShowVC-->
+        <scene sceneID="9KL-cp-FtG">
+            <objects>
+                <viewController storyboardIdentifier="ShowVC" id="aUJ-0c-NsC" customClass="ShowVC" customModule="FaceCollectionView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l2N-OD-uEl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kN1-vt-gGa">
+                                <rect key="frame" x="0.0" y="89.5" width="414" height="717"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajU-Pj-gGn">
+                                <rect key="frame" x="26" y="70" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="6Oz-gc-C2G"/>
+                                    <constraint firstAttribute="width" constant="36" id="dC6-kL-PSd"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="closeTapped:" destination="aUJ-0c-NsC" eventType="touchUpInside" id="nBZ-kw-YvZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dlB-Ul-91m"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kN1-vt-gGa" firstAttribute="centerX" secondItem="l2N-OD-uEl" secondAttribute="centerX" id="9Ct-fh-wau"/>
+                            <constraint firstItem="kN1-vt-gGa" firstAttribute="height" secondItem="l2N-OD-uEl" secondAttribute="height" multiplier="0.8" id="aKi-Bm-fEW"/>
+                            <constraint firstItem="kN1-vt-gGa" firstAttribute="centerY" secondItem="l2N-OD-uEl" secondAttribute="centerY" id="hkb-cM-Q43"/>
+                            <constraint firstItem="ajU-Pj-gGn" firstAttribute="top" secondItem="dlB-Ul-91m" secondAttribute="top" constant="26" id="kJR-cM-zC3"/>
+                            <constraint firstItem="ajU-Pj-gGn" firstAttribute="leading" secondItem="dlB-Ul-91m" secondAttribute="leading" constant="26" id="mIr-Ub-azh"/>
+                            <constraint firstItem="kN1-vt-gGa" firstAttribute="width" secondItem="l2N-OD-uEl" secondAttribute="width" id="t6q-Se-iLe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="kN1-vt-gGa" id="MPD-o6-d6v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oQv-ss-adT" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="36" height="36"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
