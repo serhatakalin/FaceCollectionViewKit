@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name         = "FaceCollectionViewKit"
   spec.version      = "1.0.0"
-  spec.summary      = "Detects the whole album and quickly lists the photos with faces."
+  spec.summary      = "A framework that lists all images in the album that contain faces."
   spec.description  = "Quickly sorts photos with faces in all albums by detecting them. Sorting style or detection sizes can be changed."
   spec.homepage     = "https://github.com/serhatakalin/FaceCollectionViewKit.git"
   spec.license      = "MIT"
