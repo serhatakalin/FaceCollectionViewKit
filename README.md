@@ -6,6 +6,7 @@ A framework that lists all images in the album that contain faces.
 - [x] Scans all albums, presents you photos with face detected.
 - [x] The quality of the photos does not deteriorate.
 - [x] Detection settings can be changed.
+- [x] Caching photo asset workaround.
 - [x] Simple and fast.
 
 ## Usage
@@ -18,6 +19,14 @@ FaceCollectionViewKit.shared.initialize(for: YOUR_CUSTOM_VIEW)
 ```ruby
 FaceCollectionViewKit.shared.imageSelected = { [weak self] image in
             //whatever you would like to do.
+}
+```
+### Cache Sync
+Use this when exiting the screen with the album. Saves cached images.
+```ruby
+override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        FaceCollectionViewKit.shared.sync()
 }
 ```
 
